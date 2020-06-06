@@ -14,6 +14,7 @@ pipeline {
         stage('Ansible') {
             steps {
                 echo 'Running build automation - ansible'
+                ansiblePlaybook(playbook: 'create_dir.yml')
             }
         }    
     }
