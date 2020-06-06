@@ -10,4 +10,4 @@
     file:
       path: /var/lib/jenkins/test_directory
       state: directory
-      mode: '0777'
+      mode: '0600'
