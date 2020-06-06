@@ -1,0 +1,13 @@
+---
+- hosts: bantex_lab
+
+  tasks:
+
+  - name: test connection
+    ping:
+
+  - name: Create file
+    file:
+      path: /var/lib/jenkins/test_directory
+      state: directory
+      mode: '0777'
